@@ -15,8 +15,8 @@ function setupGlobalVariables() {
   vX = 0;
   vY = 0;
   // color schemes
-  bgColor = color( 0 , 0 , 100 , 1);
-  fillColor = color( 0 , 0 , 0 , 1);
+  bgColor = color( 0 , 100 , 100 , 1);
+  fillColor = color( 0 , 100 , 0 , 1);
   
 }
 
