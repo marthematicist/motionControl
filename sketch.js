@@ -17,8 +17,8 @@ function setupGlobalVariables() {
   // set the color mode to HSB (hue, saturation, brightness)
   colorMode( HSB );
   // color schemes
-  bgColor = color( 0 , 100 , 100 , 1);
-  fillColor = color( 0 , 100 , 0 , 1);
+  bgColor = color( 0 , 0 , 100 , 1);
+  fillColor = color( 0 , 0 , 0 , 1);
   
 }
 
@@ -56,8 +56,8 @@ function draw() {
   background( bgColor );
   fill( fillColor );
   
-  cX += gRotX;
-  cY += gRotY;
+  cX += dRotX;
+  cY += dRotY;
   if( cX > xRes ){
     cX = xRes;
   }
