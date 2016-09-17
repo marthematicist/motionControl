@@ -8,6 +8,9 @@ function setupGlobalVariables() {
   // attenutation of rotation input
   attenX = 0.05;
   attenY = 0.05;
+  // maximum rotation input
+  maxRotX = 30;
+  maxRotY = 30;
   // cursor position
   cX = 0.5*xRes;
   cY = 0.5*yRes;
@@ -67,8 +70,13 @@ function draw() {
   background( bgColor );
   fill( fillColor );
   
-  cX -= dRotY;
-  cY -= dRotX;
+  if( abs(dRotX) < maxRotX ) {
+    cX -= dRotY;
+  }
+  if( abs(dRotY) < maxRotY ) {
+    cY -= dRotX;
+  }
+  
   if( cX > xRes ){
     cX = xRes;
   }
