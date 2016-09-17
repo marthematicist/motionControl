@@ -35,6 +35,7 @@ function setup() {
   
   // set up canvas size
   createCanvas( xRes , yRes );
+  buf = createGraphics( xRes , yRes );
 
   // do not draw borders
   noStroke();
@@ -48,6 +49,7 @@ function setup() {
   }
   
   background( bgColor );
+  buf.clear();
 }
 
 function draw() {
@@ -89,7 +91,10 @@ function draw() {
   if( cY < 0 ) {
     cY = 0;
   }
-  
+  buf.noStroke();
+  buf.fill( 0 , 0 , 0 , 0.1 );
+  buf.ellipse( cX , cY , 20 , 20);
+  image( buf , 0 , 0 );
   ellipse( cX , cY , 20 , 20);
   
   
