@@ -20,7 +20,7 @@ function setupGlobalVariables() {
   bgColor = color( 0 , 0 , 100 , 1);
   fillColor = color( 0 , 0 , 0 , 1);
   // number of frames to wait while initializing
-  waitFrames = 600;
+  waitFrames = 100;
   //frame counter;
   frameCounter = 0;
   
