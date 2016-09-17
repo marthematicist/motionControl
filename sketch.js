@@ -49,7 +49,7 @@ function setup() {
   }
   
   background( bgColor );
-  buf.clear();
+  //buf.clear();
 }
 
 function draw() {
@@ -69,8 +69,8 @@ function draw() {
     return
   }
   
-  background( bgColor );
-  fill( fillColor );
+  buf.background( bgColor );
+  buf.fill( fillColor );
   
   if( abs(dRotX) < maxRotX ) {
     cX -= dRotY;
@@ -96,7 +96,7 @@ function draw() {
   buf.fill( 0 , 0 , 0 , 1 );
   buf.ellipse( cX , cY , 20 , 20);
   image( buf , 0 , 0 , xRes , yRes );
-  ellipse( cX , cY , 20 , 20);
+  //ellipse( cX , cY , 20 , 20);
   
   
 }
