@@ -63,7 +63,6 @@ function draw() {
   if( frameCounter <= waitFrames ) {
     return
   }
-  }
   
   background( bgColor );
   fill( fillColor );
