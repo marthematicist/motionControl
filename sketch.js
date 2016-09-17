@@ -48,7 +48,7 @@ function setup() {
 }
 
 function draw() {
-  framsCounter++;
+  frameCounter++;
 
   var rotX = rotationX;
   var rotY = rotationY;
