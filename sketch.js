@@ -54,6 +54,18 @@ function draw() {
   
   cX += gRotX;
   cY += gRotY;
+  if( cX > xRes ){
+    cX = xRes;
+  }
+  if( cX < 0 ){
+    cX = 0;
+  }
+  if( cY > yRes ){
+    cY = yRes;
+  }
+  if( cY < 0 ) {
+    cY = 0;
+  }
   
   ellipse( cX , cY , 20 , 20);
   
