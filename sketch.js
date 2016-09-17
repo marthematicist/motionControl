@@ -19,6 +19,10 @@ function setupGlobalVariables() {
   // color schemes
   bgColor = color( 0 , 0 , 100 , 1);
   fillColor = color( 0 , 0 , 0 , 1);
+  // number of frames to wait while initializing
+  waitFrames = 600;
+  //frame counter;
+  frameCounter = 0;
   
 }
 
@@ -44,6 +48,8 @@ function setup() {
 }
 
 function draw() {
+  framsCounter++;
+
   var rotX = rotationX;
   var rotY = rotationY;
   var dRotX = gRotX - rotX;
@@ -53,6 +59,12 @@ function draw() {
   gRotY = attenY*rotY + (1-attenX)*gRotY;
   
   console.log( dRotX , dRotY);
+  
+  if( frameCounter <= waitFrames ) {
+    return
+  }
+  }
+  
   background( bgColor );
   fill( fillColor );
   
