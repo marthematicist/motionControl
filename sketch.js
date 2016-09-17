@@ -1,7 +1,7 @@
 function setupGlobalVariables() {
   // screen dimensions
-  xRes = 1000;
-  yRes = 1000;
+  xRes = 800;
+  yRes = 1400;
   // global rotation in x and y directions
   gRotX = 0;
   gRotY = 0;
