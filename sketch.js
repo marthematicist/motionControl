@@ -23,10 +23,11 @@ function setupGlobalVariables() {
 function setup() {
   // set up global variables
   setupGlobalVariables();
-  // set up canvas size
-  createCanvas( xRes , yRes );
   // set the color mode to HSB (hue, saturation, brightness)
   colorMode( HSB );
+  // set up canvas size
+  createCanvas( xRes , yRes );
+
   // do not draw borders
   noStroke();
   // set the angle mode to degrees
