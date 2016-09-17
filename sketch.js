@@ -27,6 +27,8 @@ function setup() {
   createCanvas( xRes , yRes );
   // set the color mode to HSB (hue, saturation, brightness)
   colorMode( HSB );
+  // do not draw borders
+  noStroke();
   // set the angle mode to degrees
   angleMode( DEGREES );
   
@@ -47,6 +49,13 @@ function draw() {
   gRotY = attenY*rotY + (1-attenX)*gRotY;
   
   console.log( dRotX , dRotY);
+  background( bgColor );
+  fill( fillColor );
+  
+  cX += gRotX;
+  cY += gRotY;
+  
+  ellipse( cX , cY , 20 , 20);
   
   
 }
