@@ -35,7 +35,7 @@ function setup() {
   angleMode( DEGREES );
   
   // initialize global rotation
-  for( var i = 0 ; i < 20000 ; i++ ) {
+  for( var i = 0 ; i < 2000000 ; i++ ) {
     gRotX = attenX*rotationX + (1-attenX)*gRotX;
     gRotY = attenY*rotationY + (1-attenX)*gRotY;
   }
