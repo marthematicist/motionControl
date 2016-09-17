@@ -1,7 +1,7 @@
 function setupGlobalVariables() {
   // screen dimensions
-  xRes = 800;
-  yRes = 800;
+  xRes = 400;
+  yRes = 400;
   // global rotation in x and y directions
   gRotX = 0;
   gRotY = 0;
@@ -37,6 +37,8 @@ function setup() {
     gRotX = attenX*rotationX + (1-attenX)*gRotX;
     gRotY = attenY*rotationY + (1-attenX)*gRotY;
   }
+  
+  background( bgColor );
 }
 
 function draw() {
