@@ -21,6 +21,8 @@ function setupGolbalVariables() {
 }
 
 function setup() {
+  // set up global variables
+  setupGlobalVariables();
   // set up canvas size
   createCanvas( xRes , yRes );
   // set the color mode to HSB (hue, saturation, brightness)
