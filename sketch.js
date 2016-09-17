@@ -6,8 +6,8 @@ function setupGlobalVariables() {
   gRotX = 0;
   gRotY = 0;
   // attenutation of rotation input
-  attenX = 0.1;
-  attenY = 0.1;
+  attenX = 0.01;
+  attenY = 0.01;
   // cursor position
   cX = 0.5*xRes;
   cY = 0.5*yRes;
