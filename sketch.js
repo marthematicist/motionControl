@@ -1,4 +1,4 @@
-function setupGolbalVariables() {
+function setupGlobalVariables() {
   // screen dimensions
   xRes = 800;
   yRes = 800;
