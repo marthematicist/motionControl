@@ -56,8 +56,8 @@ function draw() {
   background( bgColor );
   fill( fillColor );
   
-  cX += dRotY;
-  cY += dRotX;
+  cX -= dRotY;
+  cY -= dRotX;
   if( cX > xRes ){
     cX = xRes;
   }
