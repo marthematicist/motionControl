@@ -94,7 +94,7 @@ function draw() {
   buf.noStroke();
   buf.fill( 0 , 0 , 0 , 0.1 );
   buf.ellipse( cX , cY , 20 , 20);
-  image( buf , 0 , 0 );
+  image( buf , 0 , 0 , xRes , yRes );
   ellipse( cX , cY , 20 , 20);
   
   
