@@ -14,6 +14,8 @@ function setupGlobalVariables() {
   // cursor velocity
   vX = 0;
   vY = 0;
+  // set the color mode to HSB (hue, saturation, brightness)
+  colorMode( HSB );
   // color schemes
   bgColor = color( 0 , 100 , 100 , 1);
   fillColor = color( 0 , 100 , 0 , 1);
@@ -23,8 +25,7 @@ function setupGlobalVariables() {
 function setup() {
   // set up global variables
   setupGlobalVariables();
-  // set the color mode to HSB (hue, saturation, brightness)
-  colorMode( HSB );
+  
   // set up canvas size
   createCanvas( xRes , yRes );
 
